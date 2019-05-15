@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+<head>
+        <meta charset="UTF8">
+        <title>Aplicacion calculo de masa corporal</title>
+</head>
+<body>
+    <form>
+                <table class="table" border="3">
+                        <tr>
+                            <td colspan="2 " style="text-align:center">I.M.C</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center">INDICE DE MASA CORPORAL</td>
+                        </tr>
+                        <tr>
+                            <td>Peso (Kg)</td>
+                            <td><input type="text" name="txt_peso" id="txt_peso"></td>
+                        </tr>
+                        <tr>
+                            <td>Estatura (m)</td>
+                            <td><input type="text" name="txt_estatura" id="txt_estatura"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" class="btn btn-primary" value="Calcular" onclick="calcular_indice()"> 
+                            </td>
+                            <td>
+                                    <img id="imagen" src="">
+                            </td>
+                        </tr>
+                    </table>
+    </form>
+    <script>
+        function calcular_indice()
+        {
+            var p = document.getElementById("txt_peso").value;
+            var e = document.getElementById("txt_estatura").value;
+            var ind = p/(Math.pow(e,2));
+            alert('Su indice de masa corporal es : ' + ind.toFixed(1));
+            if(ind<18.5){
+                document.getElementById("imagen").src="flaco.jpeg";
+                
+            }else{
+                if(ind>24.99) {
+                    document.getElementById("imagen").src="gordo.jpeg";
+                }else{
+                    document.getElementById("imagen").src="atletico.png";
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>
