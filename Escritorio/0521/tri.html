@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tricky</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https:/resources/demos/style.css">
+    <style>
+    div.arrastre{
+        width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0;
+    }
+    div.suelte{
+        width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#draggable" ).draggable();
+        $( "#draggable2" ).draggable();
+        $( "#droppable" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+           
+        }
+        });
+        $( "#droppable2" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable3" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable4" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable5" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable6" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable7" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable8" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+        $( "#droppable9" ).droppable({
+        drop: function( event, ui ) {
+            if(ui.draggable.attr("id")=="draggable"){
+                $(this).html("<img id='o' src='recursos/o.png' width='100' height='100'>");
+                $("#draggable").draggable("disable");
+                $("#draggable2").draggable("enable");
+                $(this).droppable("disable");
+            }else{
+                $(this).html("<img id='o' src='recursos/x.png' width='100' height='100'>");
+                $("#draggable2").draggable("disable");
+                $("#draggable").draggable("enable");
+                $(this).droppable("disable");
+            }
+        }
+        });
+    } );
+    </script>
+
+</head>
+<body>
+    <table class="egt">
+        <tr>      
+        <td>
+            <div id="droppable" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        <td>
+            <div id="droppable2" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        <td>
+            <div id="droppable3" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        </tr>
+
+        <tr>      
+        <td>
+            <div id="droppable4" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        <td>
+            <div id="droppable5" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        <td>
+            <div id="droppable6" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        </tr>
+
+        <tr>      
+        <td>
+            <div id="droppable7" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        <td>
+            <div id="droppable8" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        <td>
+            <div id="droppable9" class="ui-widget-header suelte">
+                <p></p>
+            </div>
+        </td>
+        </tr>
+    </table>
+               
+    <div id="draggable" class="ui-widget-content arrastre">
+        <img id="o" src="recursos/o.png" width="100" height="100">
+    </div>
+    
+    <div id="draggable2" class="ui-widget-content arrastre">
+        <img id="x" src="recursos/x.png" width="100" height="100">
+    </div>
+</body>
+</html>
